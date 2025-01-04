@@ -6,7 +6,7 @@ const db = async () => {
         await mongoose.connect("mongodb+srv://ninganna2102:ningu2102@expensetracker.0nfbp.mongodb.net/?retryWrites=true&w=majority&appName=expensetracker")
         console.log('Db Connected')
     } catch (error) {
-        console.log('DB Connection Error');
+        console.log('DB Connection Error ' + error);
     }
 }
 
